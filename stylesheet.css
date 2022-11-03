@@ -1,0 +1,74 @@
+/* Write CSS Here */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%); */
+}
+
+body {
+    /* background-color: rgb(253, 254, 255); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full {
+    width: 50%;
+    max-width: 1000px;
+    min-height: 100px;
+    /* background-color: rgb(245, 239, 231); */
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+}
+
+.left {
+    position: initial;
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+
+.right {
+    position: initial;
+    background-color: #e0e0e0;
+    padding: 20px;
+}
+
+.image,
+.Contact,
+.Skills,
+.Language,
+.Hobbies,
+.title,
+.About,
+.Experience,
+.Education,
+.project {
+    margin-bottom: 30px;
+    font-size: small;
+}
+
+h2 {
+    text-decoration: underline;
+    color: #e7a706;
+    font-style: italic;
+}
+
+.paddingBetweenCols td {
+    padding: 3 50px;
+}
+
+p {
+    font-size: medium;
+}
+
+li {
+    font-size: medium;
+}
+
+h3 {
+    font-size: 18px;
+}
