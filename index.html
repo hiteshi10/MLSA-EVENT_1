@@ -1,107 +1,70 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Final rpsls</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- CSS only -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 </head>
 
 <body>
-    <div class="full">
-        <div class="left">
-            <div class="image">
-                <img src="https://e7.pngegg.com/pngimages/133/695/png-clipart-computer-programming-anime-programming-language-thread-animation-gril-reading-cartoon.png" alt="my_pic" style="width: 110px; height: 110px" />
-            </div>
-
-            <div class="Contact">
-                <h2><u>Contact</u></h2>
-
-                <p><b>Email id:</b>xyz@gmail.com</p>
-
-                <p><b>Mobile no :</b>1234567890</p>
-            </div>
-
-            <div class="Language">
-                <h2>Language</h2>
-                <ul>
-                    <li>English</li>
-                    <li>Hindi</li>
-                </ul>
-            </div>
-            <div class="Hobbies">
-                <h2>Hobbies</h2>
-                <ul>
-                    <li>Playing cricket</li>
-                    <li>Swimming</li>
-                    <li>Reading</li>
-                </ul>
-            </div>
+    <header>
+        <div class="title">
+            <h1>Rock Paper Scissors Lizard Spock</h1>
         </div>
-        <div class="right">
-            <div class="name">
-                <h1>NinjaCoder</h1>
-            </div>
-            <div class="title">
-                <p>Web Developer</p>
-            </div>
-            <div class="About">
-                <h2>About</h2>
+        <div class="button">
+            <a href="#play" class="bton">PLAY!</a>
+        </div>
+    </header>
 
-                <p>
-                    A woman in technology, working consistently for women in technology.
-                </p>
-            </div>
-            <div class="Education">
-                <h2>Education</h2>
-                <table class="paddingBetweenCols">
-                    <tr>
-                        <th>University/School</th>
-                        <th>Passing year</th>
-                        <th>Percentage/Cgpa</th>
-                    </tr>
-                    <tr>
-                        <td>IGDTUW</td>
-                        <td>2024</td>
-                        <td>8.82</td>
-                    </tr>
-                    <tr>
-                        <td>RPVV YV</td>
-                        <td>2019</td>
-                        <td>94%</td>
-                    </tr>
-                    <tr>
-                        <td>MRM</td>
-                        <td>2017</td>
-                        <td>10</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="Experience">
-                <h2>Experience / Volunteer Work</h2><br>
-                <h3>Class Representative</h3>
-
-                <p>January 2022 to Present</p>
-
-                <ul>
-                    <li>Represent my class in various events/meetings</li>
-                    <li>Deals with professors and students for smooth class operation</li>
-                </ul>
-
-            </div>
-
-            <div class="Skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li><b>Programming Languages : Python, Java, C++</b></li>
-                    <li><b>Frontend : HTML5, CSS3, JavaScript</b></li>
-                    <li><b>Backend : Python</b></li>
-                </ul>
-            </div>
-
-
+    <div class="play" id="play">
+        <div class="container">
+            <button onclick="user('stone')" type="button" class="bttn">
+          Stone
+        </button>
+            <button onclick="user('paper')" type="button" class="bttn">
+          Paper
+        </button>
+            <button onclick="user('scissor')" type="button" class="bttn">
+          Scissor
+        </button>
+            <button onclick="user('lizard')" type="button" class="bttn">
+          lizard
+        </button>
+            <button onclick="user('spock')" type="button" class="bttn">
+          Spock
+        </button>
+        </div>
+        <div class="container">
+            <button onclick="user('stone')" type="button" class="imgbttn">
+          <img src="download.jpg" alt="Stone" />
+        </button>
+            <button onclick="user('paper')" type="button" class="imgbttn">
+          <img src="paper.jpg" alt="Paper" />
+        </button>
+            <button onclick="user('scissor')" type="button" class="imgbttn">
+          <img src="scissor.jpg" alt="Scissor" />
+        </button>
+            <button onclick="user('lizard')" type="button" class="imgbttn">
+          <img src="lizard.jpg" alt="Lizard" />
+        </button>
+            <button onclick="user('spock')" type="button" class="imgbttn">
+          <img src="spock.jpg" alt="Spock" />
+        </button>
+        </div>
+        <div class="output container">
+            <p>User's Choice: <span id="userchoice"></span></p>
+            <p>Computer's Choice: <span id="computerchoice"></span></p>
+            <p>Result: <span id="result"></span></p>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
